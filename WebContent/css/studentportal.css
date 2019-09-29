@@ -1,0 +1,158 @@
+@CHARSET "ISO-8859-1";
+body{
+	/*background-image: url("mr-autthaporn-pradidpong-10c8YXMaAEk-unsplash.jpg");
+	background-position: center;
+	background-size: 100%;*/
+	background: #C0C0C0 !important;
+}
+
+.blurb h2{
+	color: #ea1c2c;
+	font-weight: bold;
+	font-size: 2.5rem;
+}
+
+.blurb p{
+	color: #FFFFFF !important;
+	font-weight: bold;
+	font-size: 1.125rem;
+	line-height: 2;
+}
+
+.content{
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+#mainNavbar{
+	font-size: 1.5rem;
+	font-weight: 100;
+}
+
+#mainNavbar .nav-link{
+	color: white;
+}
+
+#mainNavbar .nav-link:hover{
+	color: #ea1c2c;
+}
+
+
+#mainNavbar .navbar-brand{
+	color: #ea1c2c;
+	font-size: 1.5rem;
+	font-weight: 100;
+}
+
+#headingGroup span{
+	color:#ea1c2c;
+}
+
+.headingGroup h1{
+	font-weight: 100;
+	font-size: 4rem;
+}
+
+.navbar.scrolled{
+	background: rgb(222,192,222);
+	transition: background 200ms;
+}
+@media (max-width: 1200px){
+	.headingGroup h1{
+	font-weight: 100;
+	font-size: 3rem;
+}
+}
+#ftr{
+	background: #343a40;
+	color: white;
+	width:100%;
+}
+#cform input{
+	margin-top: 5px;
+	border-radius: 0px;
+	width: 50%;
+	margin-left: 52%;
+	background: #ffe9e3;
+}
+
+#cform textarea{
+	border-radius: 0px;
+	margin-top: 4px;
+	padding: -15px;
+	width: 50%;
+	background: #ffe9e3;
+}
+
+#cform button{
+	border-radius: 0px;
+	color: #fff;
+	background: #242323;
+	margin-right: 11.5%;
+	margin-top: 5px;
+}
+
+.heading{
+	margin-top: 10px;
+}
+
+==============================
+
+h3{
+  font-family: Calibri; 
+  font-size: 25pt;         
+  font-style: normal; 
+  font-weight: bold; 
+  color:SlateBlue;
+  text-align: center; 
+  text-decoration: underline
+}
+
+table{
+  font-family: Calibri; 
+  color:black; 
+  font-size: 11pt; 
+  font-style: normal;
+  font-weight: bold;
+  text-align:; 
+  background-color: #f6f3f2; 
+  border-collapse: collapse; 
+  border: 2px solid navy
+}
+table.inner{
+  border: 0px
+}
+
+.signup input{
+	margin-top: 5px;
+	border-radius: 0px;
+	padding:5px;
+	background: #ffe9e3;
+	margin-left: 0%;
+}
+.signup label{
+	font-size: 16px;
+	display:inline;
+	margin-left: 126%;
+}
+.signup button{
+	border-radius: 0px;
+	color: #fff;
+	background: #242323;
+	margin-left: 126%;
+	width: 25%;
+}
+
+.address{
+	background: #ffe9e3;
+}
+
+.day{
+	background: #ffe9e3;
+}
+.month{
+	background: #ffe9e3;
+}
+.year{
+	background: #ffe9e3;
+}
