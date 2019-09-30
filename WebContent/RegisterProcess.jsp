@@ -19,8 +19,8 @@
 		String birthyear = request.getParameter("Birthday_Year");
 		String email = request.getParameter("Email_Id");
 		String mob = request.getParameter("Mobile_Number");
-/* 		String pwd = request.getParameter("pwd");
- */		String male = request.getParameter("Gender");
+		/* 		String pwd = request.getParameter("pwd");
+		 */ String male = request.getParameter("Gender");
 		String female = request.getParameter("Gender");
 		String add = request.getParameter("Address");
 		String city = request.getParameter("City");
@@ -47,17 +47,21 @@
 		String bcom = request.getParameter("Course_BCom");
 		String bsc = request.getParameter("Course_BSc");
 		String ba = request.getParameter("Course_BA");
-/* 		String bsc = request.getParameter("Course_BSc");
- */		
-
+		/* 		String bsc = request.getParameter("Course_BSc");
+		 */
 
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/studentportal", "root", "");
 			Statement stmt = con.createStatement();
-			String sql = "insert into student(firstname,lastname,dob,emailid,mobileno,password,gender,address,city,pincode,state,country,hobbies) values('"
-					+ fname + "','" + lname + "','" + birthdate + "','" + email + "','" + mob + "','" + pwd + "','"
-					+ gen + "','" + add + "','" + city + "','" + pin + "','" + state + "','" + cont + "','" + hob + "')";
+			String sql = "insert into student(First_Name,Last_Name,Birthday_day,Birthday_Month,Birthday_Year,Email_Id,Mobile_Number,password,Gender,Address,City,Pin_Code,State,Country,Hobby_Drawing,Hobby_Dancing,Hobby_Cooking,ClassX_Board,ClassX_Percentage,ClassX_YrOfPassing,ClassXII_Board,ClassXII_Percentage,ClassXII_YrOfPassing,Graduation_Board,Graduation_Percentage,Graduation_YrOfPassing,Masters_Board,Masters_Percentage,Masters_YrOfPassing,Course_BCA,Course_BCom,Course_BSc,Course_BA) values('"
+					+ fname + "','" + lname + "','" + birthday + "','" + birthmonth + "','" + birthyear + "','"
+					+ email + "','" + mob + "','" /* + pwd + "','" */ + male + "','" + female + "','" + add + "','" + city
+					+ "','" + pin + "','" + state + "','" + cont + "','" + drawing + "','" + singing + "','"
+					+ dancing + "','" + cooking + "','" + X + "','" + x_per + "','" + x_year + "','" + XII + "','"
+					+ XII_per + "','" + XII_year + "','" + grad + "','" + grad_per + "','" + grad_year + "','"
+					+ master + "','" + master_per + "','" + master_year + "','" + bca + "','" + bcom + "','" + bsc
+					+ "','" + ba + "')";
 			int i = stmt.executeUpdate(sql);
 			if (i > 0) {
 	%>

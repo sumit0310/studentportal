@@ -4,6 +4,8 @@ body{
 	background-position: center;
 	background-size: 100%;*/
 	background: #C0C0C0 !important;
+	margin: 0;
+	padding: 0;
 }
 
 .blurb h2{
@@ -155,4 +157,110 @@ table.inner{
 }
 .year{
 	background: #ffe9e3;
+}
+
+.usernm {
+	background: #797979; 
+	color: #fff; 
+	font-size: 18px;
+}
+
+.usernm:hover{
+	text-decoration: none;
+	color:#242323;
+}
+.usernmsub{
+	background: #242323;
+	padding: 10px;
+	border: none;
+}
+
+.usernmsub li a{
+	color: #717070;
+	border: none;
+}
+
+.usernmsub li a:hover{
+	color: #fff;
+	background:#242323;	
+}
+
+#customercare ul{
+	margin-left: -38px;
+	font-size: 18px;
+}
+
+#customercare ul li{
+	display: inline-grid;
+}
+
+#customercare ul li a{
+	color: #717070;
+	padding-top: 5px;
+}
+
+#customercare ul li a:hover{
+	text-decoration: none;
+	color: #fff;
+
+}
+
+.fotr_icons{
+	font-size: 21px;
+    color: #fff;
+    
+ }
+
+#back{
+	font-size: 18px;
+	
+}
+#back i a{
+	color: #717070;
+}
+
+#back i {
+	padding : 25px;
+	float: right;
+	margin-top: 65px;	
+	
+}
+
+#back i a:hover{
+	text-decoration: none;
+	color: #fff;
+}
+
+.box{
+	text-align: center;
+	background: #f6f3f2;
+	padding: 3%;	
+}
+
+.box h2{
+	margin: 30px;
+}
+
+.cform input{
+	margin-top: 5px;
+	border-radius: 0px;
+	width: 50%;
+	margin-left: 52%;
+	background: #ffe9e3;
+}
+
+.cform textarea{
+	border-radius: 0px;
+	margin-top: 4px;
+	padding: -15px;
+	width: 50%;
+	background: #ffe9e3;
+}
+
+.cform button{
+	border-radius: 0px;
+	color: #fff;
+	background: #242323;
+	margin-right: 11.5%;
+	margin-top: 5px;
 }

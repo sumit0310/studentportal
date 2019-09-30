@@ -3,214 +3,222 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<title>Student Registration Form</title>
-<link rel="stylesheet" type="text/css" href="css/studentportal.css">
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	crossorigin="anonymous">
-<link rel="stylesheet"
-	href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+.form-control {
+	background-color: #ffe9e3 !important;
+}
+
+input {
+	background-color: #ffe9e3 !important;
+}
+</style>
 </head>
 <body>
 	<%@ include file="Header.jsp"%>
-	<div class="container text-center"
-		style="background: #f6f3f2; padding: 70px;">
+	<section>
+	<div class="container" style="background-color: #f6f3f2;">
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-8 col-lg-8 col-xl-6">
+				<div class="row">
+					<div class="col text-center" style="margin-top: 60px;">
+						<h1>Registration Form</h1>
+						<!--  <p class="text-h3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. </p> -->
+					</div>
+				</div>
+				<!-- <div class="row align-items-center">
+            <div class="col mt-4">
+              <input type="text" class="form-control" placeholder="First Name">
+            </div>
+          </div>
+          
+          <div class="row align-items-center">
+            <div class="col mt-4">
+              <input type="text" class="form-control" placeholder="Company Name">
+            </div>
+          </div> -->
+				<div class="row align-items-center mt-4">
+					<div class="col">
+						<input type="text" class="form-control" placeholder="First Name">
+					</div>
+					<div class="col">
+						<input type="text" class="form-control" placeholder="Last Name">
+					</div>
+				</div>
 
-		<h3>STUDENT REGISTRATION FORM</h3>
-		<form name="regform" action="RegisterProcess.jsp" method="POST"
-			onsubmit="return validation()">
+				<div class="row align-items-center">
+					<div class="col mt-4">
+						<input type="date" class="form-control" placeholder="DOB">
+					</div>
+				</div>
 
-			<div class="col-sm-6">
-				<div class="form-group signup">
+				<div class="row align-items-center">
+					<div class="col mt-4">
+						<input type="email" class="form-control" placeholder="Email id">
+					</div>
+				</div>
 
-					<table align="center" cellpadding="10">
+				<div class="row align-items-center">
+					<div class="col mt-4">
+						<input type="text" class="form-control" placeholder="Mobile no">
+					</div>
+				</div>
 
-						<!----- First Name ---------------------------------------------------------->
-						<tr>
-							<td>FIRST NAME</td>
-							<td><input type="text" name="First_Name" maxlength="30" />
-								(max 30 characters a-z and A-Z)</td>
-						</tr>
+				<div class="form-group" class="input_field radio_option"
+					style="margin-top: 25px;">
+					<input type="radio" name="radiogroup1" id="rd1"> <label
+						for="rd1">Male</label> <input type="radio" name="radiogroup1"
+						id="rd2"> <label for="rd2">Female</label>
+				</div>
+				<!-- <div class="radio">
+		  <label><input type="radio" name="optradio" checked>Option 1</label>
+		</div>
+		<div class="radio" style="margin-top: 25px;">
+		  <label><input type="radio" name="optradio">Option 2</label>
+		</div> -->
 
-						<!----- Last Name ---------------------------------------------------------->
-						<tr>
-							<td>LAST NAME</td>
-							<td><input type="text" name="Last_Name" maxlength="30" />
-								(max 30 characters a-z and A-Z)</td>
-						</tr>
+				<div class="form-group">
+					<!-- 		  <label for="comment">Address:</label>
+ -->
+					<textarea class="form-control" rows="5" id="comment"
+						placeholder="Address"></textarea>
+				</div>
 
-						<!----- Date Of Birth -------------------------------------------------------->
-						<tr>
-							<td>DATE OF BIRTH</td>
-						<td><input type="date" name="date" /></td>
-							
-							
-						<!----- Email Id ---------------------------------------------------------->
-						<tr>
-							<td>EMAIL ID</td>
-							<td><input type="text" name="Email_Id" maxlength="100" /></td>
-						</tr>
+				<div class="row align-items-center mt-4">
+					<div class="col">
+						<input type="text" class="form-control" placeholder="City">
+					</div>
+				</div>
+				<div class="row align-items-center mt-4">
+					<div class="col">
+						<input type="text" class="form-control" placeholder="Pincode">
+					</div>
+				</div>
+				<div class="row align-items-center mt-4">
+					<div class="col">
+						<input type="text" class="form-control" placeholder="State">
+					</div>
+				</div>
+				<div class="row align-items-center mt-4">
+					<div class="col">
+						<input type="text" class="form-control" placeholder="Country">
+					</div>
+				</div>
+				<table class="form-control" align="center" cellpadding="10"
+					style="margin-top: 25px;">
 
-						<!----- Mobile Number ---------------------------------------------------------->
-						<tr>
-							<td>MOBILE NUMBER</td>
-							<td><input type="text" name="Mobile_Number" maxlength="10" />
-								(10 digit number)</td>
-						</tr>
-
-						<!----- Gender ----------------------------------------------------------->
-						<tr>
-							<td>GENDER</td>
-							<td>Male <input type="radio" name="Gender" value="Male" />
-								Female <input type="radio" name="Gender" value="Female" />
-							</td>
-						</tr>
-
-						<!----- Address ---------------------------------------------------------->
-						<tr>
-							<td>ADDRESS <br /> <br /> <br /></td>
-							<td><textarea class="address" name="Address" rows="4"
-									cols="30"></textarea></td>
-						</tr>
-
-						<!----- City ---------------------------------------------------------->
-						<tr>
-							<td>CITY</td>
-							<td><input type="text" name="City" maxlength="30" /> (max
-								30 characters a-z and A-Z)</td>
-						</tr>
-
-						<!----- Pin Code ---------------------------------------------------------->
-						<tr>
-							<td>PIN CODE</td>
-							<td><input type="text" name="Pin_Code" maxlength="6" /> (6
-								digit number)</td>
-						</tr>
-
-						<!----- State ---------------------------------------------------------->
-						<tr>
-							<td>STATE</td>
-							<td><input type="text" name="State" maxlength="30" /> (max
-								30 characters a-z and A-Z)</td>
-						</tr>
-
-						<!----- Country ---------------------------------------------------------->
-						<tr>
-							<td>COUNTRY</td>
-							<td><input type="text" name="Country" value="India"
-								readonly="readonly" /></td>
-						</tr>
-
-						<!----- Hobbies ---------------------------------------------------------->
-
-						<tr>
-							<td>HOBBIES <br /> <br /> <br /></td>
-
-							<td>Drawing <input type="checkbox" name="Hobby_Drawing"
-								value="Drawing" /> Singing <input type="checkbox"
-								name="Hobby_Singing" value="Singing" /> Dancing <input
-								type="checkbox" name="Hobby_Dancing" value="Dancing" />
-								Sketching <input type="checkbox" name="Hobby_Cooking"
-								value="Cooking" /> <br /> Others <input type="checkbox"
-								name="Hobby_Other" value="Other"> <input type="text"
-								name="Other_Hobby" maxlength="30" />
-							</td>
-						</tr>
-
-						<!----- Qualification---------------------------------------------------------->
-						<tr>
-							<td>QUALIFICATION <br /> <br /> <br /> <br /> <br /> <br />
+					<!----- Qualification---------------------------------------------------------->
+					<tr>
+						<!-- <td>QUALIFICATION <br /> <br /> <br /> <br /> <br /> <br />
 								<br /></td>
 
-							<td>
-								<table>
+							<td> -->
+						<table>
 
-									<tr>
-										<td align="center"><b>Sl.No.</b></td>
-										<td align="center"><b>Examination</b></td>
-										<td align="center"><b>Board</b></td>
-										<td align="center"><b>Percentage</b></td>
-										<td align="center"><b>Year of Passing</b></td>
-									</tr>
+							<tr>
+								<td align="center"><b>S.No.</b></td>
+								<td align="center"><b>Examination</b></td>
+								<td align="center"><b>Percentage</b></td>
+								<td align="center"><b>Year of Passing</b></td>
+							</tr>
 
-									<tr>
-										<td>1</td>
-										<td>Class X</td>
-										<td><input type="text" name="ClassX_Board" maxlength="30" /></td>
-										<td><input type="text" name="ClassX_Percentage"
-											maxlength="30" /></td>
-										<td><input type="text" name="ClassX_YrOfPassing"
-											maxlength="30" /></td>
-									</tr>
+							<tr>
+								<td>1</td>
+								<td>Class X</td>
+								<!-- 										<td><input type="text" name="ClassX_Board" maxlength="30" /></td>
+ -->
+								<td><input type="text" name="ClassX_Percentage"
+									maxlength="30" /></td>
+								<td><input type="text" name="ClassX_YrOfPassing"
+									maxlength="30" /></td>
+							</tr>
 
-									<tr>
-										<td>2</td>
-										<td>Class XII</td>
-										<td><input type="text" name="ClassXII_Board"
-											maxlength="30" /></td>
-										<td><input type="text" name="ClassXII_Percentage"
-											maxlength="30" /></td>
-										<td><input type="text" name="ClassXII_YrOfPassing"
-											maxlength="30" /></td>
-									</tr>
+							<tr>
+								<td>2</td>
+								<td>Class XII</td>
+								<!-- <td><input type="text" name="ClassXII_Board"
+											maxlength="30" /></td> -->
+								<td><input type="text" name="ClassXII_Percentage"
+									maxlength="30" /></td>
+								<td><input type="text" name="ClassXII_YrOfPassing"
+									maxlength="30" /></td>
+							</tr>
 
-									<tr>
-										<td>3</td>
-										<td>Graduation</td>
-										<td><input type="text" name="Graduation_Board"
-											maxlength="30" /></td>
-										<td><input type="text" name="Graduation_Percentage"
-											maxlength="30" /></td>
-										<td><input type="text" name="Graduation_YrOfPassing"
-											maxlength="30" /></td>
-									</tr>
+							<tr>
+								<td>3</td>
+								<td>Graduation</td>
+								<!-- <td><input type="text" name="Graduation_Board"
+											maxlength="30" /></td> -->
+								<td><input type="text" name="Graduation_Percentage"
+									maxlength="30" /></td>
+								<td><input type="text" name="Graduation_YrOfPassing"
+									maxlength="30" /></td>
+							</tr>
 
-									<tr>
-										<td>4</td>
-										<td>Masters</td>
-										<td><input type="text" name="Masters_Board"
-											maxlength="30" /></td>
-										<td><input type="text" name="Masters_Percentage"
-											maxlength="30" /></td>
-										<td><input type="text" name="Masters_YrOfPassing"
-											maxlength="30" /></td>
-									</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td align="center">(10 char max)</td>
+								<td align="center">(upto 2 decimal)</td>
+							</tr>
+						</table>
 
-									<tr>
-										<td></td>
-										<td></td>
-										<td align="center">(10 char max)</td>
-										<td align="center">(upto 2 decimal)</td>
-									</tr>
-								</table>
+						</td>
+					</tr>
+				</table>
 
-							</td>
-						</tr>
-
-						<!----- Course ---------------------------------------------------------->
-						<tr>
-							<td>COURSES<br />APPLIED FOR
-								<td>BCA <input type="radio" name="Course_BCA" checked value="BCA"></td>
-								<td>B.Com <input type="radio" name="Course_BCom" value="B.Com"></td>
-								<td>B.Sc <input type="radio" name="Course_BSc" value="B.Sc"></td>
-								<td>B.A <input type="radio" name="Course_BA" value="B.A"></td>
-						</tr>
-
-						<!----- Submit and Reset ------------------------------------------------->
-						<tr>
-							<td colspan="2" align="center"><input type="submit"
-								value="Submit"> <input type="reset" value="Reset"></td>
-						</tr>
-					</table>
+				<!-- <div class="dropdown">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+    Subject
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Link 1</a>
+    <a class="dropdown-item" href="#">Link 2</a>
+    <a class="dropdown-item" href="#">Link 3</a>
+  </div>
+</div> -->
+				<div class="form-group" class="input_field radio_option"
+					style="margin-top: 25px;">
+					<input type="radio" name="radiogroup1" id="rd1"> <label
+						for="rd1">BCA</label> <input type="radio" name="radiogroup1"
+						id="rd2"> <label for="rd2">BTECH</label> <input
+						type="radio" name="radiogroup1" id="rd3"> <label for="rd3">MCA</label>
+					<input type="radio" name="radiogroup1" id="rd4"> <label
+						for="rd4">MTECH</label>
 				</div>
+				<div class="row align-items-center mt-4">
+					<div class="col">
+						<input type="password" class="form-control" placeholder="Password">
+					</div>
+					<div class="col">
+						<input type="password" class="form-control"
+							placeholder="Confirm Password">
+					</div>
+				</div>
+				<!-- <div class="row justify-content-start mt-4">
+            <div class="col">
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input">
+                  I Read and Accept <a href="https://www.froala.com">Terms and Conditions</a>
+                </label>
+              </div> -->
+
+				<button class="btn btn-primary mt-4">Register</button>
 			</div>
-		</form>
+		</div>
 	</div>
-
-
+	</div>
+	</div>
+	</section>
 	<%@ include file="Footer.jsp"%>
-	<script type="text/javascript" src="javascript/jquery.js"></script>
-	<script type="text/javascript" src="javascript/bootstrap.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>

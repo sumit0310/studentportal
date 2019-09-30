@@ -46,9 +46,9 @@
 			<h2>
 				<b>Manage Student</b>
 			</h2>
-		</div></a> <a href="AddStudent.jsp"><div class="col-sm-3">
+		</div></a> <a href="Registration.jsp"><div class="col-sm-3">
 			<h2>
-				<b>Add Student</b>
+				<b>Register Student</b>
 			</h2>
 		</div></a> <a href="ManageQueries.jsp"><div class="col-sm-3">
 			<h2>

@@ -19,10 +19,10 @@
 <title>Admin Login</title>
 </head>
 <body>
-
+<%@ include file="Header.jsp"%>
 
 	<div class="container text-center"
-		style="background: #f6f3f2; padding: 35px;">
+		style="background: #f6f3f2; padding: 70px;">
 		<h2>Admin Area *Confidential*</h2>
 		<br>
 	</div>
@@ -44,7 +44,7 @@
 			</div>
 		</form>
 	</div>
-
+<%@ include file="Footer.jsp"%>
 	<script type="text/javascript" src="javascript/jquery.js"></script>
 	<script type="text/javascript" src="javascript/bootstrap.js"></script>
 	<script type="text/javascript" src="javascript/myscript.js"></script>
