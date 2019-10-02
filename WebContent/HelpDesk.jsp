@@ -1,29 +1,25 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-compatible" content="IE-edge">
-<meta name="viewport" content="width=device-width">
-<title>CustomerCare</title>
- <link rel="stylesheet" type="text/css" href="css/mystyle.css">
- <link rel="stylesheet"
-	href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet"
-	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-	crossorigin="anonymous">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width">
+	<title>CustomerCare</title>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
 </head>
 <body>
-	<%@ include file="Header.jsp"%>
-<form name="ccare" action="customerquery.jsp" method="post" onsubmit="return customercare()">
+<%@ include file="Header.jsp"%>
+	<form name="ccare" action="customerquery.jsp" method="post" onsubmit="return customercare()">
 	<div class="container box">
 			<h2>Customer Care</h2>
 			<h4>Have any questions or concerns ? We are always ready to help! Call</h4>
 			 <h4>us at <b>+91-0000000000</b> or send us an email at</h4>
 			 <h4><b>giftaffair.shop@gmail.com</b></h4><br>
-		<div class="row col-sm-6 ">
+		<div class="row col-sm-6">
 		   <div class="form-group cform">
 		       <input type="text" class="form-control" name="name" placeholder="Name*">
 		       <input type="email" class="form-control" name="email" placeholder="Email*">
@@ -75,9 +71,9 @@
 	</div>
 	</div><br>
 
-	<%@ include file="Footer.jsp"%>
-	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-	<script	src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="javascript/jquery.js" ></script>
+	<script type="text/javascript" src="javascript/bootstrap.js"></script>
 	<script type="text/javascript" src="javascript/myscript.js"></script>
+	<%@ include file="Footer.jsp"%>
 </body>
 </html>

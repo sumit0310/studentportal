@@ -42,38 +42,43 @@ input {
               <input type="text" class="form-control" placeholder="Company Name">
             </div>
           </div> -->
+          <form action="RegisterProcess.jsp" method="post">
 				<div class="row align-items-center mt-4">
 					<div class="col">
-						<input type="text" class="form-control" placeholder="First Name">
+						<input type="text" class="form-control" name="First_Name" placeholder="First Name">
 					</div>
 					<div class="col">
-						<input type="text" class="form-control" placeholder="Last Name">
+						<input type="text" class="form-control" name="Last_Name" placeholder="Last Name">
 					</div>
 				</div>
 
 				<div class="row align-items-center">
 					<div class="col mt-4">
-						<input type="date" class="form-control" placeholder="DOB">
+						<input type="date" class="form-control" name="Birthdate" placeholder="DOB">
 					</div>
 				</div>
 
 				<div class="row align-items-center">
 					<div class="col mt-4">
-						<input type="email" class="form-control" placeholder="Email id">
+						<input type="email" class="form-control" name="Email_Id" placeholder="Email id">
 					</div>
 				</div>
 
 				<div class="row align-items-center">
 					<div class="col mt-4">
-						<input type="text" class="form-control" placeholder="Mobile no">
+						<input type="text" class="form-control" name="Mobile_Number" placeholder="Mobile no">
 					</div>
 				</div>
 
-				<div class="form-group" class="input_field radio_option"
-					style="margin-top: 25px;">
-					<input type="radio" name="radiogroup1" id="rd1"> <label
-						for="rd1">Male</label> <input type="radio" name="radiogroup1"
-						id="rd2"> <label for="rd2">Female</label>
+				<div class="form-group" class="input_field radio_option"style="margin-top: 25px;">
+							<input type="radio" name="gender" value="male"> Male
+ 						 <input type="radio" name="gender" value="female"> Female
+  						<input type="radio" name="gender" value="other"> Other
+					
+					<!-- <input type="radio" name="Male" value="MALE"> <label
+						for="rd1">Male</label> 
+						<input type="radio" name="Female"
+						id="rd2"> <label for="rd2">Female</label> -->
 				</div>
 				<!-- <div class="radio">
 		  <label><input type="radio" name="optradio" checked>Option 1</label>
@@ -86,27 +91,27 @@ input {
 					<!-- 		  <label for="comment">Address:</label>
  -->
 					<textarea class="form-control" rows="5" id="comment"
-						placeholder="Address"></textarea>
+						name="Address" placeholder="Address"></textarea>
 				</div>
 
 				<div class="row align-items-center mt-4">
 					<div class="col">
-						<input type="text" class="form-control" placeholder="City">
+						<input type="text" class="form-control" name="City" placeholder="City">
 					</div>
 				</div>
 				<div class="row align-items-center mt-4">
 					<div class="col">
-						<input type="text" class="form-control" placeholder="Pincode">
+						<input type="text" class="form-control" name="Pin_Code" placeholder="Pincode">
 					</div>
 				</div>
 				<div class="row align-items-center mt-4">
 					<div class="col">
-						<input type="text" class="form-control" placeholder="State">
+						<input type="text" class="form-control" name="State" placeholder="State">
 					</div>
 				</div>
 				<div class="row align-items-center mt-4">
 					<div class="col">
-						<input type="text" class="form-control" placeholder="Country">
+						<input type="text" class="form-control" name="Country" placeholder="Country">
 					</div>
 				</div>
 				<table class="form-control" align="center" cellpadding="10"
@@ -184,20 +189,15 @@ input {
 </div> -->
 				<div class="form-group" class="input_field radio_option"
 					style="margin-top: 25px;">
-					<input type="radio" name="radiogroup1" id="rd1"> <label
-						for="rd1">BCA</label> <input type="radio" name="radiogroup1"
-						id="rd2"> <label for="rd2">BTECH</label> <input
-						type="radio" name="radiogroup1" id="rd3"> <label for="rd3">MCA</label>
-					<input type="radio" name="radiogroup1" id="rd4"> <label
-						for="rd4">MTECH</label>
+					
+						<input type="radio" name="course" value="btech"> Btech
+ 						 <input type="radio" name="course" value="bca"> BCA
+  						<input type="radio" name="course" value="mca"> MCA
+  						<input type="radio" name="course" value="mtech"> Mtech
 				</div>
 				<div class="row align-items-center mt-4">
 					<div class="col">
-						<input type="password" class="form-control" placeholder="Password">
-					</div>
-					<div class="col">
-						<input type="password" class="form-control"
-							placeholder="Confirm Password">
+						<input type="password" class="form-control" name="pwd" placeholder="Password">
 					</div>
 				</div>
 				<!-- <div class="row justify-content-start mt-4">
@@ -209,7 +209,8 @@ input {
                 </label>
               </div> -->
 
-				<button class="btn btn-primary mt-4">Register</button>
+				<button type="submit" class="btn btn-primary mt-4">Register</button>
+				</form>
 			</div>
 		</div>
 	</div>

@@ -15,9 +15,9 @@
 		try{
 			String dquery = request.getParameter("dquery");
 			Class.forName("com.mysql.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost/giftaffair","root","");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost/studentportal","root","");
 			Statement stmt = con.createStatement();
-			String sql="delete from customerquery where q_id ='"+dquery+"' ";
+			String sql="delete from studentquery where q_id ='"+dquery+"' ";
 			
 			if(dquery != null)
 			{%>	
@@ -25,13 +25,13 @@
 				if(confirm("Really want to delete..?"))
 				{
 					alert("Query Deleted Sucessfully...!");
-					window.location="managequeries.jsp";
+					window.location="ManageQueries.jsp";
 					<%int i = stmt.executeUpdate(sql);%>
 				}
 				else
 				{
 					alert("Admin Doesn't want to Delete..!");
-					window.location="managequeries.jsp";
+					window.location="ManageQueries.jsp";
 				}
 				</script>
 			<%}

@@ -19,7 +19,7 @@
 <title>Edit Student</title>
 </head>
 <body>
-	<%String c_id = request.getParameter("c_id");
+	<%String c_id = request.getParameter("student_id");
 		out.println(c_id);
 		session.setAttribute("c_id", c_id);%>
 	<div class="container text-center" style="background: #f6f3f2; padding: 35px; font-size: large;">

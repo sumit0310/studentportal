@@ -50,20 +50,20 @@
  <%
 	try{
 		Class.forName("com.mysql.jdbc.Driver");
-		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/giftaffair","root",""); 
+		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/studentportal","root",""); 
 		Statement stmt =  con.createStatement();
-		String sql = "select * from customerquery";
+		String sql = "select * from studentquery";
 		ResultSet rs = stmt.executeQuery(sql);
 		while(rs.next()){%> 
 		<tr>
 		 
 				<td><%=rs.getString("q_id") %></td>
-				<td><%=rs.getString("c_name") %></td>	
-				<td><%=rs.getString("c_email") %></td>	
+				<td><%=rs.getString("s_name") %></td>	
+				<td><%=rs.getString("s_email") %></td>	
 				<td><%=rs.getString("q_subject") %></td>	
 				<td><%=rs.getString("message") %></td>	
 				<td><%=rs.getString("createtime") %></td>	
-				<td><a href="deletequery.jsp?dquery=<%=rs.getString("q_id")%>">Delete</a></td>
+				<td><a href="DeleteQuery.jsp?dquery=<%=rs.getString("q_id")%>">Delete</a></td>
 				
 		</tr>
 		<%}%>

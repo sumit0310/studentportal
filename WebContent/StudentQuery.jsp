@@ -20,15 +20,15 @@
 		try{
 			
 			Class.forName("com.mysql.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/giftaffair","root","");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/studentportal","root","");
 			Statement stmt = con.createStatement();
-			String sql = "insert into customerquery(c_name,c_email,q_subject,message,createtime) values('"+nm+"','"+em+"','"+sub+"','"+msg+"',now() )";
+			String sql = "insert into studentquery(s_name,s_email,q_subject,message,createtime) values('"+nm+"','"+em+"','"+sub+"','"+msg+"',now() )";
 			int i = stmt.executeUpdate(sql);
 			if(i>0)
 			{%>
 				<script type="text/javascript">
 				alert("Sucessfully Submitted..! We Will Contact You Soon.. :) ");
-				window.location="index.jsp";
+				window.location="HomePage.jsp";
 				</script>
 			<%}
 			}catch(Exception e){
