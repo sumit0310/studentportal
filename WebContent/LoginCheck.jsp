@@ -18,7 +18,7 @@
 		
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/studentportal","root","");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/studentportal","root","Qwerty@123");
 			PreparedStatement pst = con.prepareStatement("Select emailid,pass,firstname from student where emailid=? and pass=?");
 		  	pst.setString(1, email);
 		    pst.setString(2, pwd);

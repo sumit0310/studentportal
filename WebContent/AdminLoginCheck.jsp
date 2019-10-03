@@ -17,7 +17,7 @@
 		String pass = request.getParameter("pswd");
 	 	try{
 	 		Class.forName("com.mysql.jdbc.Driver");
-	 		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/studentportal","root","");
+	 		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/studentportal","root","Qwerty@123");
 	 		String sql = "select emailid,pass from admin where emailid=? and pass=? ";
 	 		PreparedStatement ps = con.prepareStatement(sql);
 	 		ps.setString(1, em);

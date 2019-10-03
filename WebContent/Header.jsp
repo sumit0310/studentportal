@@ -25,7 +25,7 @@
 <body>
 
 <!-- <h1>Student Portal</h1> -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
 		<div class="container">
 			<a href="HomePage.jsp" class="navbar-brand"> <!-- <i class="fa fa-image"></i> -->
 				Online Student Portal

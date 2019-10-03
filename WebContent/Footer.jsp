@@ -12,7 +12,8 @@
 </head>
 <body>
 <!-- Footer -->
-<footer class="page-footer font-small mdb-color pt-4">
+
+<footer class="page-footer font-small mdb-color pt-4" >
 
   <!-- Footer Links -->
   <div id="ftr" class=" text-center text-md-left">
@@ -95,8 +96,8 @@
       <div class="col-md-7 col-lg-8">
 
         <!--Copyright-->
-        <p class="text-center text-md-left">© 2019 Copyright:
-            <strong> ASSSD</strong>
+        <p class="text-center">© 2019 Copyright:
+            <strong>Student Portal</strong>
           </a>
         </p>
 
